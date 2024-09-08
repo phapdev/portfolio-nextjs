@@ -164,7 +164,7 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Participating in hackathons has been an incredibly enriching experience for me. I’ve had the opportunity to join several hackathons, where I collaborated with talented individuals to solve real-world problems through innovative solutions." 
+                  Participating in hackathons has been an incredibly enriching experience for me. I&apos;ve had the opportunity to join several hackathons, where I collaborated with talented individuals to solve real-world problems through innovative solutions.
                 </p>
               </div>
             </div>

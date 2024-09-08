@@ -126,7 +126,7 @@ export const DATA = {
           type: "Extension",
           href: "https://marketplace.visualstudio.com/items?itemName=weminal-labs.sui-simulator-vscode",
           icon: <Icons.globe className="size-3" />,
-        }, ,
+        },
       ],
       image: "/sui-simulator.png",
       video: "",
