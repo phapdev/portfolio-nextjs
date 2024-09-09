@@ -13,9 +13,12 @@ export default async function BlogPage() {
   const posts = await getBlogPosts();
 
   return (
-    <section>
+    <section id="blog" className="flex flex-col  w-full shadow-md p-4 rounded-md bg-white dark:bg-neutral-900 sm:p-2 sm:rounded-lg sm:shadow-lg ">
       <BlurFade delay={BLUR_FADE_DELAY}>
-        <h1 className="font-medium text-2xl mb-8 tracking-tighter">blog</h1>
+        <h1 className="font-medium text-2xl mb-8 tracking-tighter sm:text-4xl text-center">
+          `Blog&apos;s`
+        </h1>
+        <div className="border-b-2 border-gray-100 dark:border-neutral-800 w-full m-2 sm:m-4 sm:mx-auto"></div>
       </BlurFade>
       {posts
         .sort((a, b) => {
@@ -27,7 +30,7 @@ export default async function BlogPage() {
           return 1;
         })
         .map((post, id) => (
-          <BlurFade delay={BLUR_FADE_DELAY * 2 + id * 0.05} key={post.slug}>
+          <BlurFade delay={BLUR_FADE_DELAY * 2 + id * 0.05} key={post.slug} className="hover:scale-105 transition-all duration-300 bg-gray-50 p-4 rounded-md dark:bg-neutral-900 m-2 shadow-md hover:shadow-lg">
             <Link
               className="flex flex-col space-y-1 mb-4"
               href={`/blog/${post.slug}`}
