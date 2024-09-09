@@ -8,7 +8,7 @@ export const DATA = {
   location: "Ho Chi Minh City",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "I'm a software engineer and a full-stack developer.And I'm a blockchain developer.",
+    "I'm a software engineer and I'm a blockchain developer.",
   summary:
     "I am a blockchain developer, currently learning and developing [projects](#projects) and ideas in this field. With a passion for technology and creativity, I am always looking for innovative and effective solutions to apply blockchain in practice. I hope to have the opportunity to collaborate and exchange experiences with like-minded individuals! [Nice to meet you all!](#)",
   avatarUrl: "/me.png",
@@ -28,7 +28,7 @@ export const DATA = {
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "phapdev.contact@gmail.com",
+    email: "contact.phapdev@gmail.com",
     tel: "+84 397 254 268",
     social: {
       GitHub: {
@@ -73,27 +73,16 @@ export const DATA = {
       company: "VBI",
       href: "https://vbiacademy.edu.vn/",
       badges: [],
-      location: "Remote",
+      location: "Ho Chi Minh City",
       title: "Blockchain Education Provider | Web3 Developer Community | Web3 Bootcamps & Hackathon Organizers",
       logoUrl: "/vbi_academy_logo.jpg",
       start: "June 2024",
       end: "Present",
       description:
         "VBI – The largest Blockchain and Web3 training academy in Vietnam operates with three divisions: VBI Forum, VBI Academy, and VBI Research.",
-    },
-    {
-      company: "Shopify",
-      badges: [],
-      href: "https://shopify.com",
-      location: "Remote",
-      title: "Software Engineer",
-      logoUrl: "/shopify.svg",
-      start: "January 2021",
-      end: "April 2021",
-      description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
-    },
+    }
   ],
+
   education: [
     {
       school: "Dong Nai Technology University",
@@ -110,6 +99,7 @@ export const DATA = {
       href: "https://github.com/Weminal-labs/sui-simulator-vscode",
       dates: "April 2024 - June 2024",
       active: true,
+      win: "3rd Place Tooling Track",
       description:
         "Sui-Simulator is a tool for developers to test and simulate Sui transactions and smart contracts.",
       technologies: [
@@ -132,31 +122,32 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "DongNaiTravel",
+      href: "",
+      dates: "February 2023 - June 2023",
       active: true,
+      win: "3rd Dong Nai Solution 2023 | 4th Scientific Research Place in Dong Nai Province 2023",
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "DongNaiTravel is a application for tourists to find information about DongNai Province.",
       technologies: [
-        "Next.js",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "React Native",
+        "MongoDB",
+        "Express",
+        "Node.js",
+        "Expo",
       ],
+      videodemo: "https://www.youtube.com/watch?v=6lMZkIQiZ68",
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
+          href: "https://www.behance.net/gallery/177198847/DongNaiTravel-Smart-Guide",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/FromSunNews/DongNaiTravelApp",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -201,6 +192,18 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
+    },
+    {
+      title: "hackhcmc",
+      dates: "29 & 30 June 2024",
+      location: "VNUHCM Student Cultural House",
+      description:
+        "hackhcmc is part of AngelHack’s The Global Hackathon Series and will be held on the 29th & 30th June 2024.",
+      image:
+        "https://th.bing.com/th/id/OIP.ozIqmGCbcgvXEANc46evugAAAA?rs=1&pid=ImgDetMain",
+      mlh: "",
+      win: "",
+      links: [],
     }
   ],
 } as const;
