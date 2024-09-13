@@ -8,12 +8,16 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { InteractiveImage } from "@/components/magicui/interactive-image";
 
 const BLUR_FADE_DELAY = 0.03;
 
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
+      <div className="fixed top-0 left-0 w-full h-full">
+        <InteractiveImage />
+      </div>
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
